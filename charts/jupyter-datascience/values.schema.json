@@ -22,7 +22,7 @@
                                 "description": "supported versions",
                                 "type": "string",
                                 "enum": [
-                                    "jupyter-datascience-dev:latest"
+                                    "inseefrlab/jupyter-datascience-dev:latest"
                                         ],
                                 "pattern": "^[a-z0-9-_./]+(:[a-z0-9-_.]+)?$",
                                 "hidden": {
