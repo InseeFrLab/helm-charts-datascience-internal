@@ -57,6 +57,28 @@ entries:
   jupyter-meta:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-04T12:17:19.158791495Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Jupyter is a notebook accessible through a web browser.
+    digest: cafd34df6f27c9ed55a7ba5507e3678ef4bd2fa232e57c1888a48c6300515815
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Python
+    - Jupyter
+    name: jupyter-meta
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-meta-1.0.1/jupyter-meta-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-04T12:04:18.613362107Z"
     dependencies:
     - name: library-chart
@@ -79,4 +101,4 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-meta-1.0.0/jupyter-meta-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-04T12:06:01.804710623Z"
+generated: "2022-07-04T12:17:19.158912699Z"
