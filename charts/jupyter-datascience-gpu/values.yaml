@@ -1,0 +1,11 @@
+jupyter-meta:
+  service:
+    image:
+      version: "inseefrlab/jupyter-datascience-dev:latest-gpu"
+      pullPolicy: IfNotPresent
+      custom:
+        enabled: false
+        version: "inseefrlab/jupyter-datascience-dev:latest-gpu"
+  resources: {}
+    # limits:
+    #   nvidia.com/gpu: 1

@@ -1,0 +1,9 @@
+jupyter-meta:
+  service:
+    image:
+      version: "inseefrlab/jupyter-datascience-dev:latest"
+      pullPolicy: IfNotPresent
+      custom:
+        enabled: false
+        version: "inseefrlab/jupyter-datascience-dev:latest"
+  resources: {}
