@@ -56,6 +56,32 @@ entries:
   jupyter-datascience-gpu:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-04T12:37:16.895763491Z"
+    dependencies:
+    - name: jupyter-meta
+      repository: https://inseefrlab.github.io/helm-charts-datascience-internal
+      version: 1.0.0
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.0.21
+    description: jupyter-datascience-gpu is a notebook accessible through a web browser.
+    digest: dba4983566d8f29a16ca670f197a042c100f594a1ddb18ea1e09398dccc074ca
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Python
+    - Jupyter
+    name: jupyter-datascience-gpu
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-datascience-gpu-1.0.1/jupyter-datascience-gpu-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-04T12:06:01.804699823Z"
     dependencies:
     - name: jupyter-meta
@@ -127,4 +153,4 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-meta-1.0.0/jupyter-meta-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-04T12:29:42.212842414Z"
+generated: "2022-07-04T12:37:16.895775791Z"
