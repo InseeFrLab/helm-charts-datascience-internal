@@ -1,9 +1,6 @@
 {{- if .Values.ingress.enabled }}
 - You can connect to this jupyter with your browser on this [link](http{{ if $.Values.ingress.tls }}s{{ end }}://{{ .Values.ingress.hostname }})
 {{- end }}
-{{- if .Values.spark.sparkui }}
-- When the spark driver is running, you can connect to the spark-ui with your browser on this [link](http{{ if $.Values.ingress.tls }}s{{ end }}://{{ .Values.ingress.sparkHostname }})
-{{- end }}
 - Your access token is **{{ .Values.security.password }}**
 
 {{- if .Values.ingress.enabled }}

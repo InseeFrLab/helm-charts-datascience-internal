@@ -9,29 +9,6 @@ service:
       enabled: false
       version: ""
 
-spark:
-  sparkui: false
-  configMapName: ""
-  default: true
-  disabledCertChecking: false
-  config:
-    spark.master: k8s://https://kubernetes.default.svc:443
-    spark.kubernetes.authenticate.driver.serviceAccountName: '{{ include "library-chart.fullname" . }}'                
-    spark.kubernetes.driver.pod.name: '{{ include "library-chart.fullname" . }}-0'
-    spark.kubernetes.namespace: '{{ .Release.Namespace }}'
-    spark.kubernetes.container.image: '{{ ternary .Values.service.image.custom.version .Values.service.image.version .Values.service.image.custom.enabled }}'
-    spark.driver.extraJavaOptions: '-Dcom.amazonaws.sdk.disableCertChecking={{ .Values.spark.disabledCertChecking }}'
-    spark.executor.extraJavaOptions: '-Dcom.amazonaws.sdk.disableCertChecking={{ .Values.spark.disabledCertChecking }}'
-  userConfig:
-    spark.dynamicAllocation.enabled: "true"
-    spark.dynamicAllocation.initialExecutors: "1"
-    spark.dynamicAllocation.minExecutors: "1"
-    spark.dynamicAllocation.maxExecutors: "10"
-    spark.executor.memory: "2g"
-    spark.driver.memory: "2g"
-    spark.dynamicAllocation.executorAllocationRatio: "1"
-    spark.dynamicAllocation.shuffleTracking.enabled: "true"
-
 security:
   password: "changeme"
   networkPolicy: 
@@ -93,21 +70,6 @@ git:
   repository: ""
   branch: ""
   
-#active ou non la recherche d'un hiveMetastore dans le namespace
-# see configmap-hive.yaml et helpers template
-discovery:
-  hive: true
-  mlflow: true
-
-hive:
-  configMapName: ""
-
-mlflow:
-  configMapName: ""
-
-coresite:
-  configMapName: ""
-  
   # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 replicaCount: 1
@@ -151,8 +113,6 @@ networking:
     port: 5000
   jupyter:
     port: 8888
-  sparkui:
-    port: 4040
 
 ingress:
   enabled: true
