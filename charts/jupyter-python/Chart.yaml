@@ -1,6 +1,6 @@
 apiVersion: v2
-name: jupyter-datascience-gpu
-description: jupyter-datascience-gpu is a notebook accessible through a web browser.
+name: jupyter-python
+description: jupyter-datascience is a notebook accessible through a web browser.
 icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
 keywords:
   - Python
@@ -23,7 +23,7 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 1.0.4
+version: 1.0.0
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
@@ -36,5 +36,5 @@ dependencies:
     repository: https://inseefrlab.github.io/helm-charts-datascience-internal
     # repository: "file://../jupyter-meta"
   - name: library-chart
-    version: 2.0.21
+    version: 2.1.0
     repository: https://inseefrlab.github.io/helm-charts-datascience

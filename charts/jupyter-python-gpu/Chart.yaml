@@ -1,15 +1,15 @@
 apiVersion: v2
-name: vscode
-description: Visual Studio Code is a lightweight yet powerful source code editor with a rich ecosystem of extensions for many languages.
-icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/vscode.png
+name: jupyter-python-gpu
+description: jupyter-datascience-gpu is a notebook accessible through a web browser.
+icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
 keywords:
-  - IDE
   - Python
-home: https://code.visualstudio.com/
+  - Jupyter
+home: https://jupyter.org/
 sources:
-  - https://github.com/InseeFrLab/vscode
-  - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/vscode
-  - https://github.com/cdr/code-server
+  - https://github.com/InseeFrLab/jupyter-datascience
+  - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+  - https://github.com/jupyter/docker-stacks
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
@@ -23,14 +23,18 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 1.0.1
+version: 1.0.0
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
-appVersion: 4.5.0
+appVersion: latest
 
 dependencies:
+  - name: jupyter-meta
+    version: 1.0.1
+    repository: https://inseefrlab.github.io/helm-charts-datascience-internal
+    # repository: "file://../jupyter-meta"
   - name: library-chart
     version: 2.1.0
     repository: https://inseefrlab.github.io/helm-charts-datascience

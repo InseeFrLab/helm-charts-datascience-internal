@@ -22,14 +22,14 @@
                                 "description": "supported versions",
                                 "type": "string",
                                 "enum": [
-                                    "inseefrlab/jupyter-datascience-dev:latest"
+                                    "inseefrlab/onyxia-jupyter-python:latest"
                                         ],
                                 "pattern": "^[a-z0-9-_./]+(:[a-z0-9-_.]+)?$",
                                 "hidden": {
                                     "value": true,
                                     "path": "jupyter-meta/service/image/custom/enabled"
                                 },
-                                "default": "inseefrlab/jupyter-datascience-dev:latest"
+                                "default": "inseefrlab/onyxia-jupyter-python:latest"
                             },
                             "custom" : {
                                 "description": "use a custom jupyter docker image",
@@ -44,7 +44,7 @@
                                 "version": {
                                     "description": "jupyter unsupported version",
                                     "type": "string",
-                                    "default": "inseefrlab/jupyter-datascience-dev:latest",
+                                    "default": "inseefrlab/onyxia-jupyter-python:latest",
                                     "pattern": "^[a-z0-9-_./]+(:[a-z0-9-_.]+)?$",
                                     "hidden": {
                                         "value": false,

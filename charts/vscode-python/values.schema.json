@@ -93,9 +93,9 @@
               "version": {
                 "description": "vscode supported version",
                 "type": "string",
-                "default": "inseefrlab/onyxia-vscode:latest",
+                "default": "inseefrlab/onyxia-vscode-python:latest",
                 "enum": [
-                  "inseefrlab/onyxia-vscode:latest"
+                  "inseefrlab/onyxia-vscode-python:latest"
                 ],
                 "pattern": "^[a-z0-9-_./]+(:[a-z0-9-_.]+)?$",
                   "hidden": {
@@ -116,7 +116,7 @@
                   "version": {
                     "description": "vscode unsupported version",
                     "type": "string",
-                    "default": "inseefrlab/onyxia-vscode:latest",
+                    "default": "inseefrlab/onyxia-vscode-python:latest",
                     "hidden": {
                         "value": false,
                         "path": "service/image/custom/enabled"
