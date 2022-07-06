@@ -66,7 +66,7 @@ spec:
           image: "{{ .Values.service.image.version }}"
           {{- end }}
           command: ["/bin/sh","-c"]
-          args: ["/data/{{ .Values.init.filename}} start.sh jupyter-lab --notebook-dir=/home/$(NB_USER)/work --NotebookApp.token='$(PASSWORD)'"]
+          args: ["/data/{{ .Values.init.filename}} jupyter lab --no-browser --ip '0.0.0.0' --LabApp.token='$(PASSWORD)'"]
           imagePullPolicy: {{ .Values.service.image.pullPolicy }}
           env:
             - name: KUBERNETES_POD_NAME
