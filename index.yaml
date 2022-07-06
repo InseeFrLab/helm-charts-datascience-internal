@@ -283,6 +283,60 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-meta-1.0.0/jupyter-meta-1.0.0.tgz
     version: 1.0.0
+  jupyter-python:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-06T14:59:15.491083102Z"
+    dependencies:
+    - name: jupyter-meta
+      repository: https://inseefrlab.github.io/helm-charts-datascience-internal
+      version: 1.0.1
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: jupyter-datascience is a notebook accessible through a web browser.
+    digest: c7dd0866eae5d6ea2c4e54dc275025f1c7cd637ff9a12e3b79cd286f09a549fc
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Python
+    - Jupyter
+    name: jupyter-python
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-python-1.0.0/jupyter-python-1.0.0.tgz
+    version: 1.0.0
+  jupyter-python-gpu:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-06T14:59:15.579082412Z"
+    dependencies:
+    - name: jupyter-meta
+      repository: https://inseefrlab.github.io/helm-charts-datascience-internal
+      version: 1.0.1
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: jupyter-datascience-gpu is a notebook accessible through a web browser.
+    digest: 7d3628d07af4a55990b379a1032c94017f26bf06c4b39f7064e1ae5a297aeb56
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Python
+    - Jupyter
+    name: jupyter-python-gpu
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-python-gpu-1.0.0/jupyter-python-gpu-1.0.0.tgz
+    version: 1.0.0
   vscode:
   - apiVersion: v2
     appVersion: 4.5.0
@@ -332,4 +386,29 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-1.0.0/vscode-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-05T16:07:43.820846732Z"
+  vscode-python:
+  - apiVersion: v2
+    appVersion: 4.5.0
+    created: "2022-07-06T14:59:15.651889858Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Visual Studio Code is a lightweight yet powerful source code editor
+      with a rich ecosystem of extensions for many languages.
+    digest: cd02c8d40aa42435545ef68ccb0b9b36509bb11a895fa6e44d5a2b5b1bf6f578
+    home: https://code.visualstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/vscode.png
+    keywords:
+    - IDE
+    - Python
+    name: vscode-python
+    sources:
+    - https://github.com/InseeFrLab/vscode
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/vscode
+    - https://github.com/cdr/code-server
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-1.0.0/vscode-python-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-07-06T14:59:15.651919459Z"
