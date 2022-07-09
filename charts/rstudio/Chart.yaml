@@ -1,0 +1,31 @@
+apiVersion: v2
+name: rstudio
+description: R Studio is the reference environment / IDE for programming with R, a programming language used for data processing and statistical analysis. You can use it for spark.
+icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/rstudio.png
+keywords:
+  - R
+  - IDE
+home: https://www.rstudio.com/
+sources: 
+  - https://github.com/InseeFrLab/rstudio
+  - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/rstudio
+  - https://github.com/rocker-org/rocker
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 1.0.0
+
+dependencies:
+  - name: library-chart
+    version: 2.1.0
+    repository: https://inseefrlab.github.io/helm-charts-datascience
