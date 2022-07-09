@@ -154,6 +154,31 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-python-gpu-1.0.0/jupyter-python-gpu-1.0.0.tgz
     version: 1.0.0
+  rstudio:
+  - apiVersion: v2
+    created: "2022-07-09T18:02:48.916329752Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: R Studio is the reference environment / IDE for programming with
+      R, a programming language used for data processing and statistical analysis.
+      You can use it for spark.
+    digest: 17c80348f988d905cd3d1966c84823be2843169a5eaecebfe22f5cdbc55a9aba
+    home: https://www.rstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/rstudio.png
+    keywords:
+    - R
+    - IDE
+    name: rstudio
+    sources:
+    - https://github.com/InseeFrLab/rstudio
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/rstudio
+    - https://github.com/rocker-org/rocker
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/rstudio-1.0.0/rstudio-1.0.0.tgz
+    version: 1.0.0
   vscode-python:
   - apiVersion: v2
     appVersion: 4.5.0
@@ -179,4 +204,4 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-1.0.0/vscode-python-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-06T15:57:40.935041471Z"
+generated: "2022-07-09T18:02:48.916351252Z"
