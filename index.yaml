@@ -50,6 +50,32 @@ entries:
   jupyter-pyspark:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-22T11:57:47.63591029Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Jupyter is a notebook accessible through a web browser. You can use
+      it for Python and Spark.
+    digest: c8b4d7d39703f3ed98f3951b4fc582ae55e74d0b5b67881e89fd15fe2c34b38a
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Hadoop
+    - Spark
+    - Python
+    - Jupyter
+    name: jupyter-pyspark
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-pyspark-1.1.0/jupyter-pyspark-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-06T15:57:40.935031971Z"
     dependencies:
     - name: library-chart
@@ -182,6 +208,30 @@ entries:
     version: 1.0.0
   rstudio:
   - apiVersion: v2
+    created: "2022-07-22T11:57:47.779866582Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: R Studio is the reference environment / IDE for programming with
+      R, a programming language used for data processing and statistical analysis.
+      You can use it for spark.
+    digest: 83111071235e88b6c8f6e82dfd74ca2bf48d1bcdf13c722426cbf825e55d27c8
+    home: https://www.rstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/rstudio.png
+    keywords:
+    - R
+    - IDE
+    name: rstudio
+    sources:
+    - https://github.com/InseeFrLab/rstudio
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/rstudio
+    - https://github.com/rocker-org/rocker
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/rstudio-1.1.0/rstudio-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     created: "2022-07-09T18:02:48.916329752Z"
     dependencies:
     - name: library-chart
@@ -208,6 +258,30 @@ entries:
   vscode-python:
   - apiVersion: v2
     appVersion: 4.5.0
+    created: "2022-07-22T11:57:47.931993417Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Visual Studio Code is a lightweight yet powerful source code editor
+      with a rich ecosystem of extensions for many languages.
+    digest: c2d418bde2b9f2688f26172e6845d5f939b80962c1121ca204e8214e860e246c
+    home: https://code.visualstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/vscode.png
+    keywords:
+    - IDE
+    - Python
+    name: vscode-python
+    sources:
+    - https://github.com/InseeFrLab/vscode
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/vscode
+    - https://github.com/cdr/code-server
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-1.1.0/vscode-python-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 4.5.0
     created: "2022-07-06T14:59:15.651889858Z"
     dependencies:
     - name: library-chart
@@ -230,4 +304,4 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-1.0.0/vscode-python-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-21T19:43:56.424530074Z"
+generated: "2022-07-22T11:57:47.932056617Z"
