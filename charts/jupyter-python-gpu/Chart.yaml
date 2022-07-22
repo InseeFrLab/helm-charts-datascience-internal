@@ -1,8 +1,10 @@
 apiVersion: v2
-name: jupyter-python-gpu
-description: jupyter-datascience-gpu is a notebook accessible through a web browser.
+name: jupyter-python-gpy
+description: Jupyter is a notebook accessible through a web browser. You can use it for Python and Spark.
 icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
 keywords:
+  - Hadoop
+  - Spark
   - Python
   - Jupyter
 home: https://jupyter.org/
@@ -23,7 +25,7 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 1.1.0
+version: 1.2.0
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
@@ -31,10 +33,6 @@ version: 1.1.0
 appVersion: latest
 
 dependencies:
-  - name: jupyter-meta
-    version: 1.0.1
-    repository: https://inseefrlab.github.io/helm-charts-datascience-internal
-    # repository: "file://../jupyter-meta"
   - name: library-chart
     version: 2.1.0
     repository: https://inseefrlab.github.io/helm-charts-datascience
