@@ -1,0 +1,17 @@
+{{- if .Values.security.networkPolicy.enabled -}}
+{{- if .Values.ingress.enabled -}}
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: {{ include "library-chart.fullname" . }}-2
+spec:
+  podSelector:
+    matchLabels:
+      {{- include "library-chart.selectorLabels" . | nindent 6 }}
+  ingress:
+  - from:
+    {{- toYaml .Values.security.networkPolicy.from | nindent 4 }}
+  policyTypes:
+  - Ingress
+{{- end }}
+{{- end }} 
