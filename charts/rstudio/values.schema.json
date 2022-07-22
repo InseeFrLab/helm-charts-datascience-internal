@@ -516,7 +516,7 @@
                     },
                     "x-onyxia": {
                         "hidden": true,
-                        "overwriteDefaultWith": "{{{{project.id}}-{{k8s.randomSubdomain}}-0.{{k8s.domain}}}}"
+                        "overwriteDefaultWith": "{{project.id}}-{{k8s.randomSubdomain}}-0.{{k8s.domain}}"
                     }
                 },
                 "userHostname": {
