@@ -50,6 +50,32 @@ entries:
   jupyter-pyspark:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-22T15:48:21.883752078Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Jupyter is a notebook accessible through a web browser. You can use
+      it for Python and Spark.
+    digest: 7a0c97ee67e3931db18fe34f5ff482f892d38d0601fb6fdf481c4a1ea8d13293
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Hadoop
+    - Spark
+    - Python
+    - Jupyter
+    name: jupyter-pyspark
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-pyspark-1.1.2/jupyter-pyspark-1.1.2.tgz
+    version: 1.1.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-22T12:14:58.851148066Z"
     dependencies:
     - name: library-chart
@@ -153,6 +179,32 @@ entries:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-pyspark-1.0.0/jupyter-pyspark-1.0.0.tgz
     version: 1.0.0
   jupyter-python:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-22T15:48:22.023218885Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Jupyter is a notebook accessible through a web browser. You can use
+      it for Python and Spark.
+    digest: 92eb57f2b1587a0cb545af28a1a798eba31479d2164312957fdce3fadb8188af
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Hadoop
+    - Spark
+    - Python
+    - Jupyter
+    name: jupyter-python
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-python-1.1.1/jupyter-python-1.1.1.tgz
+    version: 1.1.1
   - apiVersion: v2
     appVersion: latest
     created: "2022-07-22T15:45:43.641247779Z"
@@ -261,6 +313,32 @@ entries:
   jupyter-python-gpy:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-22T15:48:22.154022716Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Jupyter is a notebook accessible through a web browser. You can use
+      it for Python and Spark.
+    digest: 1467b9f90fc1e40c54f78c75a418a898dff3fd731a1517d8f4b4ad35ae262229
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    keywords:
+    - Hadoop
+    - Spark
+    - Python
+    - Jupyter
+    name: jupyter-python-gpy
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/jupyter-python-gpy-1.2.1/jupyter-python-gpy-1.2.1.tgz
+    version: 1.2.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-22T15:45:43.772188224Z"
     dependencies:
     - name: library-chart
@@ -361,6 +439,30 @@ entries:
   vscode-python:
   - apiVersion: v2
     appVersion: 4.5.0
+    created: "2022-07-22T15:48:22.29780156Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Visual Studio Code is a lightweight yet powerful source code editor
+      with a rich ecosystem of extensions for many languages.
+    digest: 309b1924f95b9a81d53aa50a44f828f2d7630bdc6ce9fd8077a8c2080bc2b510
+    home: https://code.visualstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/vscode.png
+    keywords:
+    - IDE
+    - Python
+    name: vscode-python
+    sources:
+    - https://github.com/InseeFrLab/vscode
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/vscode
+    - https://github.com/cdr/code-server
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-1.1.1/vscode-python-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 4.5.0
     created: "2022-07-22T11:57:47.931993417Z"
     dependencies:
     - name: library-chart
@@ -407,4 +509,4 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-1.0.0/vscode-python-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-22T15:45:43.772213224Z"
+generated: "2022-07-22T15:48:22.29784276Z"
