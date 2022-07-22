@@ -482,4 +482,29 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-1.0.0/vscode-python-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-22T15:51:38.387306092Z"
+  vscode-python-gpu:
+  - apiVersion: v2
+    appVersion: 4.5.0
+    created: "2022-07-22T17:42:02.376225155Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.1.0
+    description: Visual Studio Code is a lightweight yet powerful source code editor
+      with a rich ecosystem of extensions for many languages.
+    digest: d2b72cbf8cf2efed408e48125ca5ecd07cae5607f70ac049fdb91129b1a3937a
+    home: https://code.visualstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/vscode.png
+    keywords:
+    - IDE
+    - Python
+    name: vscode-python-gpu
+    sources:
+    - https://github.com/InseeFrLab/vscode
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/vscode
+    - https://github.com/cdr/code-server
+    type: application
+    urls:
+    - https://github.com/InseeFrLab/helm-charts-datascience-internal/releases/download/vscode-python-gpu-1.0.0/vscode-python-gpu-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-07-22T17:42:02.376260255Z"
