@@ -31,7 +31,7 @@ init:
 
 environment:
   root: true
-  user: bobby
+  user: onyxia
   group: users
 
 s3:

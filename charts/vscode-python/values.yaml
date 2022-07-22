@@ -80,7 +80,7 @@ serviceAccount:
   name: ""
 
 environment:
-  user: bobby
+  user: onyxia
   group: users
 
 kubernetes:

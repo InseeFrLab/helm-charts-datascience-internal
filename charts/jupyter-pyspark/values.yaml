@@ -1,7 +1,6 @@
 # Default values for jupyter.
 
 service:
-  user: jovyan
   image:
     version: "inseefrlab/onyxia-jupyter-pyspark:latest"
     pullPolicy: IfNotPresent
@@ -52,8 +51,7 @@ init:
   personalInitArgs: ""
 
 environment:
-  root: true
-  user: jovyan
+  user: onyxia
   group: users
 
 s3:

@@ -80,15 +80,15 @@ spec:
               value: "{{ .Values.service.image.version }}"
               {{- end }}
             - name: NB_USER
-              value: {{ .Values.service.user }}
+              value: {{ .Values.environment.user }}
             - name: PASSWORD
               value: {{ .Values.security.password }}
             - name: PROJECT_USER
-              value: {{ .Values.service.user }}
+              value: {{ .Values.environment.user }}
             - name: PROJECT_GROUP
               value: {{ .Values.environment.group }}
             - name: ROOT_PROJECT_DIRECTORY
-              value: /home/{{ .Values.service.user }}/work
+              value: /home/{{ .Values.environment.user }}/work
             {{- if .Values.init.personalInit }}
             - name: PERSONAL_INIT_SCRIPT
               value: {{ .Values.init.personalInit }}
@@ -140,7 +140,7 @@ spec:
           volumeMounts:
             - mountPath: /data
               name: {{$volumeName}}
-            - mountPath: /home/{{ .Values.service.user}}/work
+            - mountPath: /home/{{ .Values.environment.user}}/work
               name: home
             - mountPath: /opt/hadoop/etc/hadoop/core-site.xml
               subPath: core-site.xml
