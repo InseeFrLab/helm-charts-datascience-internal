@@ -13,7 +13,7 @@
                       "pullPolicy": {
                         "type": "string",
                         "description": "option when pulling the docker image",
-                        "default": "IfNotPresent",
+                        "default": "Always",
                         "enum": ["IfNotPresent","Always","Never"]
                       },
                       "version": {
